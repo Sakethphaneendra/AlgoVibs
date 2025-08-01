@@ -6,11 +6,15 @@ import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import React from "react";
 import Completer from "./components/Completer";
+import About from "./pages/About";
+import Roadmap from "./pages/Roadmap";
+
 function App() {
 
+  
   const [mode, setmode] = useState("light")
     
-  const [Checked12, setChecked12] = useState([]);
+  const [Checked12,setChecked12] = useState([]);
   const [Checked1, setChecked1] = useState([]);
   const [Checked2, setChecked2] = useState([]);
   const [Checked3, setChecked3] = useState([]);
@@ -20,22 +24,10 @@ function App() {
   const [Checked7, setChecked7] = useState([]);
   const [Checked8, setChecked8] = useState([]);
   const [Checked9, setChecked9] = useState([]);
-  const [Checked10, setChecked10] = useState([]);
-  const [Checked11, setChecked11] = useState([]);
+  const [Checked10,setChecked10] = useState([]);
+  const [Checked11,setChecked11] = useState([]);
   const [progress, setprogress] = useState(0);
-  const [Checked13, setChecked13] = useState([]);
 
-// const [qstate, setqstate] = useState(localStorage.getItem("qstate"));
-
-//   useEffect(() => {
-//     localStorage.setItem("qstate", qstate);
-//   }, [qstate]);
-
-//   const [qstate2, setqstate2] = useState(localStorage.getItem("qstate2"));
-
-//   useEffect(() => {
-//     localStorage.setItem("qstate2", qstate2);
-//   }, [qstate2]);
 
   const arrayq = [
     {
@@ -766,7 +758,7 @@ const [count, setcount] = useState(0);
 
   return (
     <> 
-   
+        
       <Router>
         <Navbar mode={mode} setmode={setmode}/>
         <Routes> 
@@ -829,6 +821,8 @@ const [count, setcount] = useState(0);
               />
             }
           ></Route>
+ <Route path="/about" element={<About />} />
+   <Route path="/roadmap" element={<Roadmap />} />
 
           <Route
             exact
@@ -844,6 +838,8 @@ const [count, setcount] = useState(0);
               />
             }
           ></Route>
+           
+   
 
           <Route
             exact
