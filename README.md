@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="[https://via.placeholder.com/1000x300?text=30+Day+DSA+Grind](https://previews.123rf.com/images/karpenkoilia/karpenkoilia1806/karpenkoilia180600011/102988806-vector-line-web-concept-for-programming-linear-web-banner-for-coding.jpg)" alt="Demo Banner" />
+  <img src="https://previews.123rf.com/images/karpenkoilia/karpenkoilia1806/karpenkoilia180600011/102988806-vector-line-web-concept-for-programming-linear-web-banner-for-coding.jpg" alt="Demo Banner" />
 </p>
 
 <hr>
